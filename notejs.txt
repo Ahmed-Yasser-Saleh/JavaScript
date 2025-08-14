@@ -1,0 +1,41 @@
+-values & variables 
+camelcase(first letter in the first word lowercase and in next words is uppercase) used to write variables in js
+const variables all letters are uppercase
+var  const  let  and you may not declare vraiable but do not use it
+
+                                         var                                                            vs             let
+-redecleration                 corrrect                                                                      error
+-scope                             function                                                                     block {}
+                                       console.log(a); correct but undefined                       console.log(a);  error reference error
+                                       var a = 5;                                                                    let a = 5;
+
+-Strings and template literals
+
+interpolation string called template string      console.log(`ah,ED${x}`) 
+
+-Type conversion & coercion
+-truthy & falsy values
+5 fallsy values: 0, '', undefined, null, NaN
+
+-Equality operator 
+=== → equal value and datatype
+== → equal value only
+
+-expression produce value: 1 + 2
+ statement produce action : if() console.log(). 
+
+-conditioanla operator (ternary operator)
+
+-js is backwards not forward compatable: backward →the older code js can still run in modern browser today, 
+not forward → newer features may not work in old browser
+
+part-2
+'use strict' //to see bugs and error
+function decleretion vs function expression
+expression-bodied method : method written in breif
+ vs
+ labmda expression (arrow function) : function as a value so it is assinged to a variable
+
+const array can be modify but can not be reassign
+dot & bracket notation
+() => this.lname //not correct (this keyword)  do not work in arrow function
