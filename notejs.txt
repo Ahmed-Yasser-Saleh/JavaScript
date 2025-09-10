@@ -39,3 +39,32 @@ expression-bodied method : method written in breif
 const array can be modify but can not be reassign
 dot & bracket notation
 () => this.lname //not correct (this keyword)  do not work in arrow function
+
+dom manipulation: how js interact with ui → make js access html element and styles
+dom document object model: structured documentation ex: html tree ال هي ال تاج بتاع ال html 
+getelementbyid faster than queryselector
+
+Hoisting & TDZ
+
+Hoisting:
+المتغيرات بـ var بيتم رفع تعريفها لأعلى الكود (لكن القيمة بتبقى undefined لحد ما تتعين).
+
+TDZ (Temporal Dead Zone):
+لو حاولت تستخدم متغير معرف بـ let أو const قبل ما يتعمله declaration → هيبقى في TDZ وهيحصل Error
+
+window => global object in js 
+var name ="ali"
+window.name = ali
+
+let, const not in window but in TDZ if you refer to it before decleration 
+note: this keyword with arrow fun refer to parent scope
+note: خلي بالك ان this مش هنستخدمها مع arrow fun عشان بتشاور ع window مش ال اوبجيكت ال نده ال فانكشن 
+بس خلي بالك لو فيه برويرتي انت معرفها var وادتها قيمه 
+ this. نفس اسم البروبيرتي 
+هيروح يطبع ال بروبيرتي ده لان اصلا الاتنين بقو ف window
+
+arrgument keyword
+
+object.assign => نسخ سطحي بتنسخ بس ال بريميتيف فاليو بالقيم بتاعتها انم الارراي وغيره من الاوبجيكت بيتم مشاركه ال عنوان بتاعها ف بالبتالي اي تعديل بيحصل ف اي اوبحيكت منهم هيتعدل ف التاني
+
+first-class- function => passing function as an argument for another function
